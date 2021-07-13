@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: $font-family;
+    text-decoration: none;
+}
+html , body {
+    margin: 0; padding: 0;
+    background: $bgcolor;
+    color: #fff;
+}
+header {
+    padding: 15px 10px;
+    .navbar-brand {
+        color: $green !important;
+        font-weight: bold;
+    }
+}
+.co {
+    width: 80%;
+    margin:auto;
+}
+table {
+    width: 90%;
+    margin: auto;
+    * {
+        border: 0 !important;
+    }
+    thead tr th {
+        color : #565B65;
+        font-weight: normal;
+        font-size: 14px;
+        width: 25%;
+
+    }
+    td {
+        width: 25%;
+        font-weight: bold;
+        font-size: 18px;
+        color: #eee;
+        padding: 20px;
+        p {
+            font-weight: normal;
+            font-size: 14px;
+            color: #979cad;
+        }
+    }
+}
+
+.card-q {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    height: 600px;
+    background: $green;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    section {
+        width: 45%;
+        padding: 40px;
+    }
+    color: #1F262C;
+    h2 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+    .code {
+        padding: 20px;
+        background: #1F262C;
+        border-radius: 10px;
+        color: #2d3748;
+    }
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border: 3px solid #2cd458;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #2cd458 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading {
+    text-align: center;
+    margin-top: 50px;
+}
